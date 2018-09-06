@@ -1,4 +1,7 @@
-class NegociacaoController{
+import { NegociacoesView, MensagemView } from '../views/index';
+import { Negociacao, Negociacoes } from '../models/index';
+
+export class NegociacaoController{
 
     private _inputData: JQuery;
     private _inputQuantidade: JQuery;
@@ -29,4 +32,4 @@ class NegociacaoController{
         this._negociacoesView.update(this._negociacoes);
         this._mensagemview.update('Negociação adicionada com sucesso.')
     }
-} //testando um comentario!
+}
